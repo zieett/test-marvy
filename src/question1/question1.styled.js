@@ -2,10 +2,10 @@ import styled, { keyframes } from "styled-components";
 
 export const myOrbit = (num, gap) => keyframes`
         from {
-            transform: rotate(${num * gap + 0}deg) translateX(150px) ;
+            transform: rotate(${num * ((gap * 180) / Math.PI) + 0}deg) translateX(150px) ;
         }
         to {
-            transform: rotate(${num * gap + 360}deg) translateX(150px);
+            transform: rotate(${num * ((gap * 180) / Math.PI) + 360}deg) translateX(150px);
         }
 `;
 export const Container = styled.div`
